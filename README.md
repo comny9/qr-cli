@@ -22,6 +22,20 @@ deno install --allow-read --allow-write -n qr https://raw.githubusercontent.com/
 
 `~/.deno/bin` にPATHが通っていれば、`qr` コマンドが使えるようになります。
 
+### キャッシュのクリア
+
+リモートURLから実行する場合、Denoは依存関係をローカルにキャッシュします。最新版に更新するには:
+
+```bash
+deno cache --reload https://raw.githubusercontent.com/comny9/qr-cli/main/main.ts
+```
+
+`deno install` でインストールした場合は、再インストール:
+
+```bash
+deno install -f --allow-read --allow-write -n qr https://raw.githubusercontent.com/comny9/qr-cli/main/main.ts
+```
+
 ### 方法3: ローカルにクローン
 
 ```bash

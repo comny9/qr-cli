@@ -1,0 +1,33 @@
+{
+  "version": "5",
+  "specifiers": {
+    "jsr:@std/cli@1": "1.0.16",
+    "npm:jsqr@^1.4.0": "1.4.0",
+    "npm:pngjs@7": "7.0.0",
+    "npm:qrcode-generator@^1.4.4": "1.5.2"
+  },
+  "jsr": {
+    "@std/cli@1.0.16": {
+      "integrity": "02df293099c35b9e97d8ca05f57f54bd1ee08134f25d19a4756b3924695f4b00"
+    }
+  },
+  "npm": {
+    "jsqr@1.4.0": {
+      "integrity": "sha512-dxLob7q65Xg2DvstYkRpkYtmKm2sPJ9oFhrhmudT1dZvNFFTlroai3AWSpLey/w5vMcLBXRgOJsbXpdN9HzU/A=="
+    },
+    "pngjs@7.0.0": {
+      "integrity": "sha512-LKWqWJRhstyYo9pGvgor/ivk2w94eSjE3RGVuzLGlr3NmD8bf7RcYGze1mNdEHRP6TRP6rMuDHk5t44hnTRyow=="
+    },
+    "qrcode-generator@1.5.2": {
+      "integrity": "sha512-pItrW0Z9HnDBnFmgiNrY1uxRdri32Uh9EjNYLPVC2zZ3ZRIIEqBoDgm4DkvDwNNDHTK7FNkmr8zAa77BYc9xNw=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@std/cli@1",
+      "npm:jsqr@^1.4.0",
+      "npm:pngjs@7",
+      "npm:qrcode-generator@^1.4.4"
+    ]
+  }
+}

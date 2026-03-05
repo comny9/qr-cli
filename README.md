@@ -2,12 +2,37 @@
 
 Denoで動作するQRコード生成・読み取りCLIツール。
 
-## セットアップ
+## インストール
+
+### 方法1: URLから直接実行
+
+クローン不要で、aliasを設定するだけで使えます。`.bashrc` や `.zshrc` に追加:
+
+```bash
+alias qr='deno run --allow-read --allow-write https://raw.githubusercontent.com/comny9/qr-cli/main/main.ts'
+```
+
+### 方法2: deno install でインストール
+
+グローバルコマンドとしてインストール:
+
+```bash
+deno install --allow-read --allow-write -n qr https://raw.githubusercontent.com/comny9/qr-cli/main/main.ts
+```
+
+`~/.deno/bin` にPATHが通っていれば、`qr` コマンドが使えるようになります。
+
+### 方法3: ローカルにクローン
+
+```bash
+git clone https://github.com/comny9/qr-cli.git
+cd qr-cli
+```
 
 aliasを `.bashrc` や `.zshrc` に追加:
 
 ```bash
-alias qr='deno run --allow-read --allow-write /path/to/qr/main.ts'
+alias qr='deno run --allow-read --allow-write /path/to/qr-cli/main.ts'
 ```
 
 ## 使い方

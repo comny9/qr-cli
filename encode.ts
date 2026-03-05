@@ -1,5 +1,5 @@
-import qrcode from "qrcode-generator";
-import { PNG } from "pngjs";
+import qrcode from "npm:qrcode-generator@^1.4.4";
+import { PNG } from "npm:pngjs@^7.0.0";
 
 export interface EncodeOptions {
   output?: string;

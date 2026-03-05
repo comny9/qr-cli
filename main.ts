@@ -1,4 +1,4 @@
-import { parseArgs } from "@std/cli/parse-args";
+import { parseArgs } from "jsr:@std/cli@^1/parse-args";
 import { encode } from "./encode.ts";
 import { decode } from "./decode.ts";
 

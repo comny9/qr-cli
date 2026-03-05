@@ -1,5 +1,5 @@
-import jsQR from "jsqr";
-import { PNG } from "pngjs";
+import jsQR from "npm:jsqr@^1.4.0";
+import { PNG } from "npm:pngjs@^7.0.0";
 
 export async function decode(imagePath: string): Promise<string> {
   const fileData = await Deno.readFile(imagePath);

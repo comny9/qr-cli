@@ -66,8 +66,11 @@ qr encode "Hello World" -o output.png
 
 ### デコード（QRコード → 文字列）
 
+PNG, JPG形式に対応:
+
 ```bash
 qr decode image.png
+qr decode image.jpg
 ```
 
 ### ヘルプ
@@ -82,3 +85,4 @@ qr --help
 - qrcode-generator (npm)
 - jsqr (npm)
 - pngjs (npm)
+- jpeg-js (npm)
